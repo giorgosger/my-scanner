@@ -3,8 +3,8 @@ FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install -y gcc
 
-COPY hello.c .
+COPY randsum.c .
 
-RUN gcc hello.c -o hello
+RUN gcc randsum.c -o randsum
 
-CMD ["./hello"]
+CMD ["./randsum"]
